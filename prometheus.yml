@@ -5,13 +5,13 @@ scrape_configs:
   - job_name: 'prometheus'
     scrape_interval: 5s
     static_configs:
-      - targets: ['10.48.164.221:9090']
+      - targets: ['d.d.d.d:d']
 
   - job_name: 'kube-state-metrics'
     metrics_path: /metrics
     scrape_interval: 5s
     static_configs:
-      - targets: ['10.48.164.220:30008']
+      - targets: ['d.d.d.d:d']
 
 
   - job_name: 'node-exporter'
@@ -24,7 +24,7 @@ scrape_configs:
     metrics_path: /metrics
     scrape_interval: 5s
     static_configs:
-      - targets: [''d.d.d.d:d']
+      - targets: ['d.d.d.d:d']
 
 
   - job_name: 'node-exporter'
